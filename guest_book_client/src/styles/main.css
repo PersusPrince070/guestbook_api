@@ -111,8 +111,46 @@ label {
     border: none;
 }
 
+.post-list {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.note {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all 1.2s;
+    min-width: 25%;
+    min-height: 25%;
+    margin: 15px;
+}
+
+.note:hover {
+    transform: scale(1.1);
+}
+
+.note-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.note-title {
+    font-size: 20px;
+    color: rgb(7, 43, 80);
+}
+
+.close {
+    text-decoration: none;
+    color: rgb(7, 43, 80);
+}
+
 @media (max-width: 700px) {
     .form {
+        width: 80%;
+    }
+    .note {
         width: 80%;
     }
 }
